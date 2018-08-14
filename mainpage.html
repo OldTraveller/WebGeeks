@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-image: url('images/back.jpg') ;
+        background-size:cover;     
+        image-rendering: auto ;
+        background-repeat: no-repeat ; 
+        background-size: inherit;        
+    }
+
+    .mainpage {
+        opacity: 1 ;
+        color : white ;
+        font-size: 100px ; 
+        text-align: center ; 
+    }
+
+    .mainpage h1 {
+        opacity: 1 ;
+        color : white ;
+        font-size: 100px ; 
+        text-align: center ; 
+    }
+
+h1,h2,h3 {
+	margin:0 0 35px 0;
+	font-family: 'Patua One', cursive;
+	letter-spacing:1px;
+}
+
+
+p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+a{
+	color:#26a5d3;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contact{
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+/* HERE IS THE BUTTON CCS */
+.btn-inverse {
+	background-color: #222;
+	border-color:white;
+	color: white;
+    width : 75px ;
+	border-radius: 10px ; 
+}
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse.focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.open > .dropdown-toggle.btn-inverse {
+	color: #fff;
+	background-color: #080808;
+	border-color: white;
+	border-radius: 10px ; 
+}
+
+
+
+</style>
+
+<body>
+    
+    <!-- NAVBAR IS PAIN IN THE A** -->
+    <section>
+        <nav class="navbar navbar-webmaster">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="mainpage.html">WebGEEKS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <form class="navbar-form navbar-right search-form" role="search">
+                        <input type="text" class="form-control" placeholder="Search" style="margin-top : 4px;"/>
+                        <button class="btn btn-inverse" data-href="#" style="margin-top : 4px;">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="course.html" style="margin-top : 4px;">Courses<span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="write_to_us.html" style="margin-top : 4px;">Write to us<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- NAVBAR IS PAIN IN THE A** -->
+    
+
+    <div class="container mainpage">
+
+                
+                <h1 style="margin-top : 70px ;">WebGEEKS</h1>
+                <h3>There are three responses to a piece of design - yes,no,and WOW! Wow is the one to aim for !</h3>
+                <button class="btn btn-inverse" onclick="window.location.href='course.html'" style="height : 50px ; width : 100px ; border-radius : 10px ; padding :5px ; color :white ; background-color : black ; border-color : white ;">Dive In</button>
+            </div>
+        
+            <section id="contact" class="content-section text-center">
+                <div class="contact-section">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <hr>
+                            <h3>Our Social Sites</h3>
+                            <ul class="list-inline banner-social-buttons">
+                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name"></span></i></a></li>
+                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name"></span></i></a></li>
+                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name"></span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+        </section>
+        
+        
+
+
+
+</body>
+
+<script>
+    $(function(){
+      $("#navigation_thingi").load("navbar.html"); 
+    });
+</script>
+
+</html>
